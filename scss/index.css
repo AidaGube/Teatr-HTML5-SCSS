@@ -693,6 +693,26 @@
   fill: #D1A954;
 }
 
+.footer {
+  border-top: 1px solid #989898;
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.footer__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #989898;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;

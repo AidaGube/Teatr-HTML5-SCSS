@@ -1,0 +1,17 @@
+.footer {
+    border-top: 1px solid $color-light-gray;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    &__text {
+            @include font2 (12px,18px);
+        color: $color-light-gray;
+        }
+}
