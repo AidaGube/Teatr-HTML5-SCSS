@@ -1,0 +1,212 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    padding-top: 51px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__phone {
+        @include font(16px, 25px);
+        text-align: right;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-white;
+        border-bottom: 2px solid $bg-orange;
+        padding-bottom: 5px;
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    &__list {
+        display: flex;
+        position: relative;
+        z-index: 2;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    &__link {
+        @include font(18px);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $text-white;
+        transition: color 0.2s linear;
+        margin-right: 63px;
+    }
+
+    &__link:hover {
+        color: $text-orange;
+    }
+
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 2;
+    }
+}
+
+.header__burger {
+    display: none;
+}
+
+.menu-social {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+.fixed-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: rgba(51, 51, 51, 0.75);
+    padding-bottom: 86px;
+
+    &__text {
+        @include font(18px, 24px);
+        position: absolute;
+        width: 300px;
+        bottom: 550px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-90deg);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $text-gray;
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__link {
+        width: 26px;
+        height: 26px;
+        object-position: center;
+    }
+
+    &__link:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.social::before {
+    content: "";
+    width: 3px;
+    height: 80px;
+    background-color: $bg-gray;
+    margin-bottom: 30px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/main.jpg") center/cover no-repeat;
+
+    &__phone {
+        z-index: 3;
+        display: none;
+        @include font(16px, 25px);
+        text-align: right;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-white;
+        border-bottom: 2px solid $bg-orange;
+        padding-bottom: 5px;
+    }
+
+    &__row {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        padding-top: 280px;
+        margin-bottom: 50px;
+        @include font(64px, 87px);
+        text-transform: uppercase;
+        color: $text-white;
+    }
+
+    &__subtitle {
+        margin-bottom: 50px;
+        width: 540px;
+        @include font2(14px, 21px);
+        color: $text-white;
+    }
+
+    &__button {
+        @include font(18px, 20px);
+        display: inline-block;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $color-white;
+        padding: 17px 47px;
+        background: $bg-orange;
+        outline: none;
+        border: 3px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            color: $text-orange;
+            background-color: transparent;
+            border-color: $text-orange;
+        }
+
+        &:hover path {
+            fill: $text-orange;
+        }
+    }
+
+    &__slider {
+        margin-top: 100px;
+        margin-right: 75px;
+        position: relative;
+    }
+}
