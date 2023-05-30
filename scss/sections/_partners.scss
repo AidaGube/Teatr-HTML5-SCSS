@@ -1,0 +1,32 @@
+.partners {     
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    
+        h2 {
+        margin-bottom: 100px;
+        @include font (48px,65px);
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $text-orange;
+    }
+        span {
+                color: $text-white;
+        }
+   
+    &__item {
+        padding-left: 30px;
+     margin-bottom: 80px;
+    }
+    
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+}
+.row-phone {
+    display: none;
+}

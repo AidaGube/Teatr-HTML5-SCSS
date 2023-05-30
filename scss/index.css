@@ -526,6 +526,40 @@
   margin-bottom: 30px;
 }
 
+.partners {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.partners h2 {
+  margin-bottom: 100px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D1A954;
+}
+.partners span {
+  color: #FFFFFF;
+}
+.partners__item {
+  padding-left: 30px;
+  margin-bottom: 80px;
+}
+.partners__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-phone {
+  display: none;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
