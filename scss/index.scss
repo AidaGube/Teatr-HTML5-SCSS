@@ -4,6 +4,8 @@
 @import './helpers/variables';
 
 @import './components/header';
+@import './sections/hero';
+@import './sections/slider';
 
 .container {
   max-width: 1110px;
