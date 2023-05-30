@@ -560,6 +560,139 @@
   display: none;
 }
 
+.contacts {
+  margin-top: 60px;
+}
+.contacts h2 {
+  margin-bottom: 100px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D1A954;
+}
+.contacts span {
+  color: #FFFFFF;
+}
+.contacts__row {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts-nav__list {
+  width: 100%;
+}
+.contacts-nav__item {
+  margin: 20px 20px 30px 10px;
+}
+.contacts-nav__item a {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contacts-info {
+  width: 40%;
+}
+.contacts-info__title {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #989898;
+  width: 390px;
+}
+.contacts-info__item input {
+  margin: 20px;
+  background: #444444;
+  border: 1px solid #616161;
+  width: 180px;
+  height: 35px;
+  outline: none;
+  border-bottom-width: 2px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+  color: #FFFFFF;
+}
+.contacts-info__item input:hover {
+  color: #D1A954;
+  background-color: transparent;
+  border-color: #D1A954;
+}
+.contacts-info__item input:hover path {
+  fill: #FFFFFF;
+}
+.contacts-info__item input::-webkit-outer-spin-button, .contacts-info__item input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contacts-info__item input[type=number] {
+  -moz-appearance: textfield;
+}
+.contacts-messange__sms {
+  margin-top: 20px;
+}
+.contacts-messange__sms input {
+  width: 310px;
+  height: 110px;
+  background: #444444;
+  border: 1px solid #616161;
+  border-bottom-width: 2px;
+  padding-left: 15px;
+  transition: 0.3s;
+  color: #FFFFFF;
+  outline: none;
+}
+.contacts-messange__sms input:hover {
+  color: #D1A954;
+  background-color: transparent;
+  border-color: #D1A954;
+}
+.contacts-messange__sms input:hover path {
+  fill: #D1A954;
+}
+.contacts-messange__button {
+  margin-top: 40px;
+  margin-left: 110px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 17px 47px;
+  background: #D1A954;
+  outline: none;
+  border: 3px solid transparent;
+  transition: 0.3s;
+}
+.contacts-messange__button:hover {
+  color: #D1A954;
+  background-color: transparent;
+  border-color: #D1A954;
+}
+.contacts-messange__button:hover path {
+  fill: #D1A954;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
