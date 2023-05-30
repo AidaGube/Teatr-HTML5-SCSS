@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
 
+@import './helpers/mixins';
+@import './helpers/variables';
+
 @import './components/header';
 
 .container {
@@ -65,13 +68,13 @@ p {
 }
 
 .col-5 {
-  width: 41.12%;
+  width: 41.12%
 }
 
 .col-3 {
-  width: 25%;
+  width: 25%
 }
 
 .col-4 {
-  width: 33.33%;
+  width: 33.33%
 }
