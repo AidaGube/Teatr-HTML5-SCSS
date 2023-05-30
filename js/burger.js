@@ -1,10 +1,10 @@
-const iconMenu = document.querySelectorAll('.header__burger');
+const iconMenus = document.querySelectorAll('.header__burger');
 
-if (iconMenu) {
-	const menuHeader = document.querySelector('.header__menu');
-	iconMenu.addEventListener("click", function(e) {
-		document.body.classList.toggle('_lock');
+iconMenus.forEach(function(iconMenu) {
+  iconMenu.addEventListener("click", function(e) {
+    document.body.classList.toggle('_lock');
     iconMenu.classList.toggle('_active');
-	menuHeader.classList.toggle('_active');
-	});
-}
+    const menuHeader = document.querySelector('.header__menu');
+    menuHeader.classList.toggle('_active');
+  });
+});
