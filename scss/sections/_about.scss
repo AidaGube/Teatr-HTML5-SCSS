@@ -1,0 +1,60 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+    &__title {
+       p {
+        @include font2(14px,21px);
+        color: $text-white;
+       }
+    }
+    
+      h3 {
+        margin-bottom: 40px;
+        @include font(21px,29px);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $text-white;
+       } 
+    }
+
+.text-center {
+    margin-bottom: 100px;
+
+    h2 {
+        @include font (48px,65px);
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $text-orange;}
+        span {
+            color: $text-white;
+        }
+    }
+
+
+.about__number{
+ padding: 0 30px;
+    &-text {
+    p {
+        @include font(16px,22px);
+        letter-spacing: 0.05em;
+        color: $text-orange;
+    }
+
+        span {
+            @include font(16px,22px);
+            letter-spacing: 0.05em;
+            color: $text-white;
+         }
+        }
+
+    }
