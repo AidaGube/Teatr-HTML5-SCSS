@@ -1,0 +1,53 @@
+.raiting {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  &__container {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  
+  &__row {
+    background: url(../img/raiting.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 126px 110px 126px 190px;
+  }
+
+  &__years {
+    margin-left: 20px;
+    a{
+      width: 182px;
+      @include font(72px,98px);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $text-orange;
+    }
+  }
+
+  &__content {
+    p {
+       width: 550px;
+      @include font(36px, 54px);
+      letter-spacing: 0.1em;
+      color: $text-white;
+      margin-left: 50px;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+&__img {
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+}
