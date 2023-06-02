@@ -1,7 +1,5 @@
 # Teatr web-site
 
-Together with a team of 5 people, we created a full-fledged project for an electronic equipment store on the React. There are moments in the process of dorabotka.
-
 ## Main features:
 
 <ol>
